@@ -319,5 +319,4 @@ class SecLibGateway implements GatewayInterface {
 
 		return $this->connection = new phpseclib\Net\SFTP($this->host, $this->port);
 	}
-
 }

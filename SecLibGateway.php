@@ -317,6 +317,6 @@ class SecLibGateway implements GatewayInterface {
 	{
 		if ($this->connection) return $this->connection;
 
-		return $this->connection = new phpseclib\Net\SFTP($this->host, $this->port);
+		return $this->connection = new phpseclib\Net\SFTP($this->host, $this->port, 600);
 	}
 }
